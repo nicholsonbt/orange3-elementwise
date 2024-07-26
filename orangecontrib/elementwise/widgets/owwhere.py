@@ -18,7 +18,7 @@ class UnknownValueException(Exception):
 
 class OWWhere(widget.OWWidget, ConcurrentWidgetMixin):
     name = "Elementwise Where"
-    description = ""
+    description = "Change attribute values where they equal some value."
     icon = "icons/where.svg"
     id = "orangecontrib.elementwise.widgets.owwhere"
     priority = 20

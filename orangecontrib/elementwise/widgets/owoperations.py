@@ -122,7 +122,7 @@ def get_targets(p_data, s_data):
 
 class OWOperations(widget.OWWidget, ConcurrentWidgetMixin):
     name = "Elementwise Operations"
-    description = ""
+    description = "Perform elementwise operations on two tables."
     icon = "icons/operations.svg"
     id = "orangecontrib.elementwise.widgets.owoperations"
     priority = 10
