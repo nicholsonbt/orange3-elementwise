@@ -122,7 +122,10 @@ def get_targets(p_data, s_data):
 
 class OWOperations(widget.OWWidget, ConcurrentWidgetMixin):
     name = "Elementwise Operations"
-
+    description = ""
+    icon = "icons/operations.svg"
+    id = "orangecontrib.elementwise.widgets.owoperations"
+    priority = 10
 
     class Inputs:
         p_data = widget.Input("Primary Data", Orange.data.Table, default=True)
@@ -138,6 +141,7 @@ class OWOperations(widget.OWWidget, ConcurrentWidgetMixin):
     settingsHandler = settings.DomainContextHandler()
     
     want_main_area = False
+    resizing_enabled = False
 
 
     operation_index = settings.Setting(0)
