@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 
 NAME = "Orange3-elementwise"
 
-VERSION = "0.0.1"
+VERSION = "0.1.0"
 
 DESCRIPTION = "A collection of elementwise widgets"
 LONG_DESCRIPTION = open(path.join(path.dirname(__file__), 'README.pypi'),
